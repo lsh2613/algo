@@ -3,8 +3,10 @@ package 백준;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
-import java.util.stream.IntStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringTokenizer;
 
 public class B13711 {
     public static void main(String[] args) throws IOException {
@@ -32,7 +34,6 @@ public class B13711 {
                 int idx = Collections.binarySearch(LIS, key);
                 idx = idx < 0 ? -idx - 1 : idx;
                 LIS.set(idx, key);
-
             }
         }
         System.out.println(LIS.size());
